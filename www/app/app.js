@@ -20,11 +20,17 @@ angular.module('bballApp', ['ionic'])
 
   $stateProvider
 
+    .state('home', {
+      url: '/home',
+      templateUrl: 'app/home/home.html'
+    })
+
+    // primary page for the rest of the app
     .state('app', {
-    url: '/home',
-    templateUrl: 'app/home/home.html'
-  });
+      url: '/app',
+      templateUrl: 'app/layout/menu-layout.html'
+    });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app');
 });
