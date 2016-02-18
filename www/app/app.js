@@ -22,7 +22,6 @@ angular.module('bballApp', ['ionic'])
 
     .state('app', {
     url: '/home',
-    abstract: true,
     templateUrl: 'app/home/home.html'
   });
 
