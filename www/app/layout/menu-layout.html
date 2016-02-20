@@ -6,7 +6,7 @@
       <button menu-toggle="left" class="button button-icon icon ion-navicon">
       </button>
     </ion-header-bar>
-    <ion-view></ion-view>
+    <ion-nav-view name="mainContent"></ion-nav-view>
   </ion-side-menu-content>
 
   <!-- side menu itself -->
@@ -16,11 +16,11 @@
     </header>
     <ion-content class="has-header">
       <ion-list>
-        <ion-item menu-close>Home</ion-item>
-        <ion-item menu-close>Teams</ion-item>
-        <ion-item menu-close>Standings</ion-item>
-        <ion-item menu-close>Locations</ion-item>
-        <ion-item menu-close>Rules</ion-item>
+        <ion-item menu-close ui-sref="home.group">Home</ion-item>
+        <ion-item menu-close ui-sref="app.teams">Teams</ion-item>
+        <ion-item menu-close ui-sref="app.standings">Standings</ion-item>
+        <ion-item menu-close ui-sref="app.locations">Locations</ion-item>
+        <ion-item menu-close ui-sref="app.rules">Rules</ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>

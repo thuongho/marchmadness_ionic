@@ -1,19 +1,19 @@
 <!-- header -->
-<ion-nav-bar class="bar-balanced">
+<ion-header-bar class="bar-balanced">
   <h1 class="title">March Madness Schedule</h1>
-</ion-nav-bar>
+</ion-header-bar>
 <!-- end header -->
 
 <!-- footer -->
 <ion-tabs class="tabs-energized tabs-icon-top">
-  <ion-tab title="Group" href="#" icon="ion-home">
+  <ion-tab title="Group" href="#/home/group" icon="ion-home">
     <!-- placeholder for now -->
-    <ion-view></ion-view>
+    <ion-nav-view name="tab-group"></ion-nav-view>
   </ion-tab>
 
-  <ion-tab title="My Bracket" href="#" icon="ion-star">
+  <ion-tab title="My Bracket" ui-sref="home.mybracket" icon="ion-star">
     <!-- placeholder for now -->
-    <ion-view></ion-view>
+    <ion-nav-view name="tab-mybracket"></ion-nav-view>
   </ion-tab>
 </ion-tabs>
 <!-- end footer -->
