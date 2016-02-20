@@ -2,10 +2,16 @@
 
   <!-- header bar will go here -->
   <ion-side-menu-content>
-    <ion-header-bar class="bar-balanced">
-      <button menu-toggle="left" class="button button-icon icon ion-navicon">
-      </button>
-    </ion-header-bar>
+    <ion-nav-bar class="bar-balanced">
+      <!-- back button -->
+      <ion-nav-back-button></ion-nav-back-button>
+
+      <!-- toggle left side menu -->
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
     <ion-nav-view name="mainContent"></ion-nav-view>
   </ion-side-menu-content>
 
