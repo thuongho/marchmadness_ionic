@@ -1,4 +1,4 @@
-angular.module('bballApp', ['ionic', 'uiGmapgoogle-maps'])
+angular.module('bballApp', ['ngCordova', 'ionic', 'uiGmapgoogle-maps'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
